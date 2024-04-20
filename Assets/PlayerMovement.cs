@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
     {
         // Input.GetAxisRaw returns a value of -1, 0, or 1 for left/right or up/down arrow keys (or WASD keys)
         movement.x = Input.GetAxisRaw("Horizontal");
-    
 
         if (Input.GetKey(KeyCode.Space) && shootingCooldown <= 0)
         {
