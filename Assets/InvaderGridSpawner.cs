@@ -16,7 +16,7 @@ public class InvaderGridSpawner : MonoBehaviour
             {
                 // Adjust spawn position by adding verticalOffset to the y-coordinate
                 Vector2 spawnPosition = new Vector2(col * spacing, row * spacing + verticalOffset);
-                Instantiate(enemyPrefab, spawnPosition, Quaternion.identity, transform);
+                Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
             }
         }
     }
